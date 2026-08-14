@@ -40,6 +40,12 @@
 
   
     
+<link rel="stylesheet" href="/lib/splide/splide.min.css">
+
+  
+
+  
+    
       
         
         
@@ -189,11 +195,17 @@
   <section class="archive">
     <div class="archive-container">
       <div class="archive-post">
-        <h3 class="archive-total">归档: 1 篇</h3>
+        <h3 class="archive-total">归档: 2 篇</h3>
         
         
           
             <h3 class="archive-year">2026 年</h3>
+          
+          <div class="archive-item">
+            <a class="archive-date" href="/posts/184071c0-97fe-11f1-a6ee-57653b88d7a6/">八月 15</a>
+            <a class="archive-title" href="/posts/184071c0-97fe-11f1-a6ee-57653b88d7a6/">未雨三餐，兰玉一枕｜广雅新生食宿攻略</a>
+          </div>
+        
           
           <div class="archive-item">
             <a class="archive-date" href="/posts/be133880-9330-11f1-99d1-81552ec647fc/">八月 08</a>
@@ -254,6 +266,28 @@
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
+
+
+
+  
+<script src="/lib/splide/splide.min.js"></script>
+
+  <script>
+    (function () {
+      function initSplide () {
+        if (typeof Splide === 'undefined') return;
+        var list = document.querySelectorAll('.splide');
+        for (var i = 0; i < list.length; i++) {
+          new Splide(list[i]).mount();
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initSplide);
+      } else {
+        initSplide();
+      }
+    })();
+  </script>
 
 
 

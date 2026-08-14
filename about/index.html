@@ -40,6 +40,12 @@
 
   
     
+<link rel="stylesheet" href="/lib/splide/splide.min.css">
+
+  
+
+  
+    
       
         
         
@@ -301,6 +307,28 @@
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
+
+
+
+  
+<script src="/lib/splide/splide.min.js"></script>
+
+  <script>
+    (function () {
+      function initSplide () {
+        if (typeof Splide === 'undefined') return;
+        var list = document.querySelectorAll('.splide');
+        for (var i = 0; i < list.length; i++) {
+          new Splide(list[i]).mount();
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initSplide);
+      } else {
+        initSplide();
+      }
+    })();
+  </script>
 
 
 

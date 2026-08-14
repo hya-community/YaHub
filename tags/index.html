@@ -40,6 +40,12 @@
 
   
     
+<link rel="stylesheet" href="/lib/splide/splide.min.css">
+
+  
+
+  
+    
       
         
         
@@ -189,10 +195,10 @@
   <section class="tags">
     <header class="header">
   <h1 class="header-title">标签</h1>
-  <p class="header-subtitle">共: 1 个</p>
+  <p class="header-subtitle">共: 2 个</p>
 </header>
     <div class="tags-container">
-      <a href="/tags/%E5%85%AC%E5%91%8A/" style="font-size: 14px; color: #666">公告</a>
+      <a href="/tags/%E5%85%AC%E5%91%8A/" style="font-size: 14px; color: #666">公告</a> <a href="/tags/%E6%A0%A1%E5%9B%AD%E9%A4%90%E9%A5%AE/" style="font-size: 14px; color: #666">校园餐饮</a>
     </div>
   </section>
 </main>
@@ -246,6 +252,28 @@
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
+
+
+
+  
+<script src="/lib/splide/splide.min.js"></script>
+
+  <script>
+    (function () {
+      function initSplide () {
+        if (typeof Splide === 'undefined') return;
+        var list = document.querySelectorAll('.splide');
+        for (var i = 0; i < list.length; i++) {
+          new Splide(list[i]).mount();
+        }
+      }
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initSplide);
+      } else {
+        initSplide();
+      }
+    })();
+  </script>
 
 
 
