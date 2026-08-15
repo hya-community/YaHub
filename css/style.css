@@ -928,6 +928,11 @@ body input {
 .footer .footer-social .footer-social-item i {
   font-size: 1.7em;
 }
+.footer .footer-social .footer-social-item .icon-rss {
+  width: 1.7em;
+  height: 1.7em;
+  vertical-align: -0.35em;
+}
 .footer .footer-copyright {
   text-align: center;
 }
